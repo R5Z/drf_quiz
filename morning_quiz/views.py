@@ -8,6 +8,7 @@ from rest_framework_simplejwt.views import (
 
 from .serializers import CustomTokenObtainPairSerializer, UserSerializer
 
+# 굳이 필요하지 않은 파일. tokenobtainview 내부에 이미 포함 되어 있음.
 
 class UserView(APIView):
     def post(self, request):
